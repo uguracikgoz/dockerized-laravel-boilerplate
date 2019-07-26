@@ -13,13 +13,13 @@ Requirements:
 -   give file permission to repo folder
 
 TODO :
-- clone the project from gitlab
+- clone the project from github
 - go to regarding folder with cd command and go with command :"sudo docker-compose up -d"
 
 OUTPUT : 
 - on http://localhost:80, defaultly installed laravel project which is located in project folder can be accessed.
 - mysql is supposed to work over 3306 port.
-- you may access to adminer to control out mysql databases with ui over http://27.0.0.1:8080
+- you may access to adminer to control out mysql databases with ui over http://127.0.0.1:8080
     - to react at mysql with adminer
         -   server   : mysql
         -   username : root
@@ -93,7 +93,7 @@ Gereksinimler :
 - git
 
 Yapılması gerekenler :
-- Proje git üzerinden çekilir
+- Proje github üzerinden çekilir
 - cd komutu ile indirilen klasöre gidilir ve "sudo docker-compose up -d" komutu kullanılır
 
 Çıktı :
