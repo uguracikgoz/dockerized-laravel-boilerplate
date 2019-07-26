@@ -1,4 +1,4 @@
-# phpdev compose project
+# Dockerized laravel boilerplate
 
 # 🇬🇧EN
 The project to build up nginx, phpfpm, mysql, adminer by using docker-compose.
