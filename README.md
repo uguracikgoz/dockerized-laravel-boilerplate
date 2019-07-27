@@ -30,7 +30,7 @@ p.s. : You may stop it with "sudo docker-compose down"
 p.s. : Please stop service that may use ports those defined in docker-compose file such may : mysql, nginx or apache
 
 Some more spesification :
-- You may leave sql files into mysql-dump folder that you want to be imported in mysql. ci_sessions.sql table has already located as default for codeigniter session handling.
+
 - You may want to create or implement a different laravel project into project folder. If you do, you need to consider mysql configuration that is shown on following:
 ```
         'mysql' => [
@@ -72,7 +72,7 @@ Yapılması gerekenler :
 
 Çıktı :
 
-- http://localhost:8181 üzerinden proje üzerinde code klasörünün içerisindeki default gelen codeigniter projesine erişilebilir.
+- http://localhost:8181 üzerinden proje üzerinde code klasörünün içerisindeki default gelen laravel projesine erişilebilir.
 - 3306 portu üzerinden mysql çalışıyor olacaktır.
 - http://127.0.0.1:8080 üzerinden adminera erişerek mysql üzerindeki veritabanlarını görsel arayüz ile kontrol edebilirsiniz.
     -   adminer üzerinden veritabanına ulaşabilmek için 
@@ -85,7 +85,8 @@ not : "sudo docker-compose down" ile durdurabilirsiniz.
 not : kurulumdan önce lütfen fiziksel ortamda docker-compose.yml dosyasının içerisinde bulunan portları kullanan servisleri durdurun. Örn : mysql, nginx veya apache gibi
 
 Biraz daha detay :
-- Mysql içerisinde başlangıç için import etmek istediğiniz sql tablolarını, mysql-dump klasörüne bırakabilirsiniz. Default olarak codeigniter'ın session management için ihtiyaç duyduğu ci_session.sql tablosu bırakılmıştır.
+- Mysql içerisinde başlangıç için import etmek istediğiniz sql tablolarını, mysql-dump klasörüne bırakabilirsiniz. Default olarak 
+'ın session management için ihtiyaç duyduğu ci_session.sql tablosu bırakılmıştır.
 - Eğer farklı bir laravel projesi implementasyonu düşünüyorsanız lütfen implementasyondan sonra aşağıdaki database ayarlarını göz önünde bulundurunuz:
 ```
         'mysql' => [
