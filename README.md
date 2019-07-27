@@ -85,32 +85,6 @@ not : "sudo docker-compose down" ile durdurabilirsiniz.
 not : kurulumdan önce lütfen fiziksel ortamda docker-compose.yml dosyasının içerisinde bulunan portları kullanan servisleri durdurun. Örn : mysql, nginx veya apache gibi
 
 Biraz daha detay :
-- Mysql içerisinde başlangıç için import etmek istediğiniz sql tablolarını, mysql-dump klasörüne bırakabilirsiniz. Default olarak codeigniter'ın session management için ihtiyaç duyduğu ci_session.sql tablosu bırakılmıştır.bileceği compose projesidir.
-
-Gereksinimler :
-- docker
-- docker-compose
-- git
-
-Yapılması gerekenler :
-- Proje github üzerinden çekilir
-- cd komutu ile indirilen klasöre gidilir ve "sudo docker-compose up -d" komutu kullanılır
-
-Çıktı :
-
-- http://localhost:80 üzerinden proje üzerinde code klasörünün içerisindeki default gelen codeigniter projesine erişilebilir.
-- 3306 portu üzerinden mysql çalışıyor olacaktır.
-- http://127.0.0.1:8080 üzerinden adminera erişerek mysql üzerindeki veritabanlarını görsel arayüz ile kontrol edebilirsiniz.
-    -   adminer üzerinden veritabanına ulaşabilmek için 
-        -   server   : mysql
-        -   username : root
-        -   password : docker-compose.yml dosyasının içerisinde belirttiğiniz MYSQL_ROOT_PASSWORD değerinin karşılığıdır. Default olarak expPass2019! belirtilmiştir.
-- Gerektiği taktirde değişiklikleri yapabilmek amaçlı nginx configurasyon dosyası default.conf olarak klasörün içerisine mount edilmiştir.
-
-not : "$sudo docker-compose down" ile durdurabilirsiniz.
-not : kurulumdan önce lütfen fiziksel ortamda docker-compose.yml dosyasının içerisinde bulunan portları kullanan servisleri durdurun. Örn : mysql, nginx veya apache gibi
-
-Biraz daha detay :
 - Mysql içerisinde başlangıç için import etmek istediğiniz sql tablolarını, mysql-dump klasörüne bırakabilirsiniz. Default olarak codeigniter'ın session management için ihtiyaç duyduğu ci_session.sql tablosu bırakılmıştır.
 - Eğer farklı bir laravel projesi implementasyonu düşünüyorsanız lütfen implementasyondan sonra aşağıdaki database ayarlarını göz önünde bulundurunuz:
 ```
